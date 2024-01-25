@@ -1,5 +1,5 @@
 import "../styles/header.css";
-import Resources from "../data/Resources";
+import Resources from "../data/resources";
 import { useEffect, useState } from "react";
 
 const Header = (props) => {
