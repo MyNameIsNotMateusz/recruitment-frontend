@@ -8,7 +8,7 @@ const Header = (props) => {
   // Adds a useEffect hook that triggers every time props.toggle changes. If it changes, it toggles the display of the first and last name.
   useEffect(() => {
 
-    const fullname = document.querySelector(".header-caption-fullname");
+    const fullname = document.querySelector(".header__caption-fullname");
 
     fullname.classList.toggle("show");
 
@@ -18,14 +18,13 @@ const Header = (props) => {
   return (
     <div className="header">
       <a href="/">
-        <div className="header-logo">
+        <div className="header__logo">
           <img src={Resources.htmlImage} alt="HTML5 Icon" />
         </div>
       </a>
-      <div className="header-caption">
-        <p className="header-caption-label">Zadanie <span>rekrutacyjne</span></p>
-        {/* <p className="header-caption-fullname" style={{ height: showFullname ? '23px' : '0', visibility: showFullname ? 'visible' : 'hidden' }}>Mateusz Otorowski</p> */}
-        <p className="header-caption-fullname">Mateusz Otorowski</p>
+      <div className="header__caption">
+        <p className="header__caption-label">Zadanie <span>rekrutacyjne</span></p>
+        <p className="header__caption-fullname">Mateusz Otorowski</p>
       </div>
     </div>
   )

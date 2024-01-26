@@ -7,8 +7,8 @@ const Footer = () => {
   const showMoreOption = () => {
 
     // I select the arrow icon and the div that contains these two options.
-    const arrowUp = document.querySelector(".arrowUp");
-    const options = document.querySelector(".main-options");
+    const arrowUp = document.querySelector(".footer__arrow-up");
+    const options = document.querySelector(".main__options");
 
     // I retrieve all the current classes that the arrow icon contains and save them to an array.
     const classArray = arrowUp.classList.value.split(' ');
@@ -29,21 +29,21 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="footer-label">
+      <div className="footer__label">
         CSS <br /> IS <br /> AWESOME
       </div>
-      <div className="footer-label-container">
+      <div className="footer__label-container">
         <div>
         </div>
       </div>
-      <div className="footer-author--container">
+      <div className="footer__author-container">
         <button />
         <p>nabthat</p>
         <button />
       </div>
-      <button onClick={showMoreOption} className="footer-button">
+      <button onClick={showMoreOption} className="footer__button">
         POKAŻ
-        <img src={Resources.arrowup} alt="Arrow Up" className="arrowUp " />
+        <img src={Resources.arrowup} alt="Arrow Up" className="footer__arrow-up" />
       </button>
     </div>
   )

@@ -7,7 +7,7 @@
  grid-template-rows: 1fr 6fr 1fr;
 }
 
-.main-options-container {
+.main__options-container {
  width: 100%;
  grid-row: 3 / span 1;
  display: flex;
@@ -15,12 +15,12 @@
  justify-content: end;
 }
 
-.main-options-container .main-options {
+.main__options-container .main__options {
  border: none;
  width: 13%;
  height: 0%;
  background-color: white;
- box-shadow: 0px -9px 50px 4px rgba(66, 68, 90, 1);
+ box-shadow: 0px -2px 25px -1px rgba(0, 0, 0, 1);
  border-top-right-radius: 5px;
  border-top-left-radius: 5px;
  transition: all 0.5s ease;
@@ -30,9 +30,10 @@
  justify-content: center;
  row-gap: 10px;
  opacity: 0;
+ padding: 2px;
 }
 
-.main-options-first, .main-options-second {
+.main__options-item {
  display: flex;
  align-items: center;
  column-gap: 3px;
@@ -40,27 +41,20 @@
  cursor: pointer;
 }
 
-.main-options-first:hover p,
-.main-options-first:hover svg path {
+.main__options-item:hover p,
+.main__options-item:hover svg path {
  color: #e88404;
  fill: #e88404;
 }
 
-.main-options-second:hover p,
-.main-options-second:hover svg path {
- color: #e88404;
- fill: #e88404;
-}
-
-.main-options-first svg path,
-.main-options-second svg path {
+.main__options-item svg path {
  transition: all 0.5s ease;
 }
 
-.main-options-first p,
-.main-options-second p {
+.main__options-item p {
  font-size: 13px;
  font-weight: 800;
  color: #222325;
  transition: all 0.5s ease;
 }
+

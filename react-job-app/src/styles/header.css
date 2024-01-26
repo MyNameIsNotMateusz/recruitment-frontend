@@ -12,7 +12,7 @@
  border: none;
 }
 
-.header-logo {
+.header__logo{
  display: flex;
  justify-content: center;
  align-items: center;
@@ -25,30 +25,30 @@
  transition: background-color 0.5s ease;
 }
 
-.header-logo:hover {
+.header__logo:hover {
  background-color: #e88404;
 }
 
-.header-logo img {
+.header__logo img {
  width: 65%;
 }
 
-.header-caption {
+.header__caption {
  color: white;
  display: flex;
  flex-direction: column;
  align-items: end;
 }
 
-.header-caption .header-caption-label {
+.header__caption .header__caption-label {
  font-size: x-large;
 }
 
-.header-caption .header-caption-label span {
+.header__caption .header__caption-label span {
  font-weight: 700;
 }
 
-.header-caption .header-caption-fullname {
+.header__caption .header__caption-fullname {
  font-weight: 100;
  font-size: large;
  height: 0px;
@@ -56,7 +56,7 @@
  opacity: 0;
 }
 
-.header-caption .header-caption-fullname.show {
+.header__caption .header__caption-fullname.show {
  height: 23px;
  opacity: 1;
 }

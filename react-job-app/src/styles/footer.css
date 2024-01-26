@@ -9,7 +9,7 @@
  border-top: 2px solid #100c14;
 }
 
-.footer-label {
+.footer__label {
  width: 80px;
  height: 80px;
  cursor: pointer;
@@ -22,11 +22,11 @@
  font-size: large;
 }
 
-.footer-label-container {
+.footer__label-container {
  width: 13%;
 }
 
-.footer-label-container div {
+.footer__label-container div {
  border: 1px solid #292930;
  width: 80px;
  height: 80px;
@@ -35,16 +35,16 @@
  cursor: pointer;
 }
 
-.footer-label:hover ~ .footer-label-container div {
+.footer__label:hover + .footer__label-container div {
  transform: rotate(360deg);
  border-color: #e88404;
 }
 
-.footer-label:hover {
+.footer__label:hover {
  color: #979ba8;
 }
 
-.footer-author--container {
+.footer__author-container {
  display: flex;
  justify-content: center;
  align-items: center;
@@ -53,19 +53,19 @@
 }
 
 
-.footer-author--container button {
+.footer__author-container button {
  background-color: #2a2d35;
  width: 20%;
  height: 2px;
  border: none;
 }
 
-.footer-author--container p {
+.footer__author-container p {
  color: #2a2d35;
  font-weight: bold;
 }
 
-.footer-button {
+.footer__button {
  width: 13%;
  background-color: transparent;
  border: 1px solid #292930;
@@ -79,12 +79,12 @@
  transition: all 0.5s ease;
 }
 
-.footer-button:hover {
+.footer__button:hover {
  border-color: #fdfdfd;
  color: #fdfdfd;
 }
 
-.footer-button .arrowUp {
+.footer__button .footer__arrow-up {
  width: 10px;
  margin-left: 6px;
  transition: all 0.5s ease;
