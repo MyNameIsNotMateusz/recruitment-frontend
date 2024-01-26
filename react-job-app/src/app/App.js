@@ -1,5 +1,5 @@
-import Components from "../data/components";
 import "../styles/app.css";
+import Components from "../data/components";
 
 const App = () => {
 
