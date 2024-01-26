@@ -23,7 +23,7 @@
 }
 
 .footer-label-container {
- width: 10%;
+ width: 13%;
 }
 
 .footer-label-container div {
@@ -37,7 +37,7 @@
 
 .footer-label:hover ~ .footer-label-container div {
  transform: rotate(360deg);
- border-color: #ad8959;
+ border-color: #e88404;
 }
 
 .footer-label:hover {
@@ -66,7 +66,7 @@
 }
 
 .footer-button {
- width: 10%;
+ width: 13%;
  background-color: transparent;
  border: 1px solid #292930;
  padding: 8px 0px;
@@ -91,9 +91,7 @@
  visibility: visible;
 }
 
-.footer-button .arrowDown {
- width: 10px;
- transition: all 0.5s ease;
- visibility: hidden;
- width: 0px;
+.rotated {
+ transform: rotate(180deg);
 }
+
