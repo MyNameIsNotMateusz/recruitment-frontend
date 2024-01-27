@@ -1,7 +1,7 @@
 .main {
  border: none;
  grid-row: 2 / span 1;
- padding: 0 3vh;
+ padding: 0 3vw;
  background-color: #2a2d36;
  display: grid;
  grid-template-rows: 1fr 6fr 1fr;
@@ -58,15 +58,17 @@
  transition: all 0.5s ease;
 }
 
+
+
 @media screen and (max-width: 600px) {
 .main {
-  padding: 0 1.8vh;
+  padding: 0 1.8vw;
  }
 }
 
 @media screen and (max-width: 450px) {
  .main {
-  padding: 0vh 1.3vh;;
+  padding: 0vh 1.3vw;;
  }
 }
 
