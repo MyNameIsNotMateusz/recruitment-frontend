@@ -84,14 +84,24 @@
  color: #fdfdfd;
 }
 
-.footer__button .footer__arrow-up {
+.footer__button svg {
  width: 10px;
- margin-left: 6px;
+ margin-left: 5px;
  transition: all 0.5s ease;
  visibility: visible;
+ /* transform: rotate(270deg); */
 }
 
+.footer__button svg path {
+ fill: #a1a7b4;
+}
+
+.footer__button:hover svg path {
+ fill: #fdfdfd;
+}
+
+
 .rotated {
- transform: rotate(180deg);
+ transform: rotate(90deg);
 }
 
