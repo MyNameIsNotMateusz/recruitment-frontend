@@ -4,12 +4,19 @@
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding: 0 2.5rem;
+ padding: 1.5vh 3vh;
  background-color: #100c14;
  z-index: 1000;
  position: sticky;
  top: 0;
  border: none;
+}
+
+.header a {
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .header__logo{
@@ -18,8 +25,8 @@
  align-items: center;
  border: 0;
  border-radius: 50%;
- width: 75px;
- height: 75px;
+ width: 9.5vh;
+ height: 9.5vh;
  cursor: pointer;
  background-color: #383434;
  transition: background-color 0.5s ease;
@@ -41,7 +48,8 @@
 }
 
 .header__caption .header__caption-label {
- font-size: x-large;
+ font-size: xx-large;
+ text-align: end;
 }
 
 .header__caption .header__caption-label span {
@@ -50,17 +58,71 @@
 
 .header__caption .header__caption-fullname {
  font-weight: 100;
- font-size: large;
- height: 0px;
+ font-size: x-large;
+ height: 0vh;
  transition: all 0.5s ease;
  opacity: 0;
+ text-align: end;
 }
 
 .header__caption .header__caption-fullname.show {
- height: 23px;
  opacity: 1;
+ height: 1.73vh;
 }
 
+@media screen and (max-width: 900px) {
+ .header__caption .header__caption-label {
+  font-size: x-large;
+ }
+ 
+ .header__caption .header__caption-fullname {
+  font-size: large;
+ }
+
+ .header__logo{
+  width: 8.2vh;
+  height: 8.2vh;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .header__caption .header__caption-label {
+  font-size: large;
+ }
+ 
+ .header__caption .header__caption-fullname {
+  font-size: medium;
+ }
+
+ .header__logo{
+  width: 7.8vh;
+  height: 7.8vh;
+ }
+
+ .header {
+  padding: 1.5vh 1.8vh;
+ }
+
+}
+
+@media screen and (max-width: 450px) {
+ .header__caption .header__caption-label {
+  font-size: medium;
+ }
+ 
+ .header__caption .header__caption-fullname {
+  font-size: small;
+ }
+
+ .header__logo{
+  width: 6.9vh;
+  height: 6.9vh;
+ }
+
+ .header {
+  padding: 1.5vh 1.3vh;;
+ }
+}
 
 
 
