@@ -4,7 +4,7 @@
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding: 0 2.5rem;
+ padding: 0 3vw;
  background-color: #15161a;
  border-top: 2px solid #100c14;
 }
@@ -22,20 +22,17 @@
  font-size: large;
 }
 
-.footer__label-container {
- width: 13%;
-}
 
-.footer__label-container div {
+.footer__label-container {
  border: 1px solid #292930;
- width: 80px;
  height: 80px;
+ width: 80px;
  color: #272a31;
  transition: all 1s ease;
  cursor: pointer;
 }
 
-.footer__label:hover + .footer__label-container div {
+.footer__label:hover + .footer__label-container {
  transform: rotate(360deg);
  border-color: #e88404;
 }
@@ -45,13 +42,15 @@
 }
 
 .footer__author-container {
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
  display: flex;
  justify-content: center;
  align-items: center;
  width: 15%;
  column-gap: 5px;
 }
-
 
 .footer__author-container button {
  background-color: #2a2d35;
@@ -66,7 +65,7 @@
 }
 
 .footer__button {
- width: 13%;
+ width: 15%;
  background-color: transparent;
  border: 1px solid #292930;
  padding: 8px 0px;
@@ -89,7 +88,6 @@
  margin-left: 5px;
  transition: all 0.5s ease;
  visibility: visible;
- /* transform: rotate(270deg); */
 }
 
 .footer__button svg path {
@@ -100,8 +98,69 @@
  fill: #fdfdfd;
 }
 
-
 .rotated {
  transform: rotate(90deg);
 }
 
+@media screen and (max-width: 1500px) {
+ .footer__button {
+  width: 18.5%;
+ }
+}
+
+@media screen and (max-width: 1120px) {
+ .footer__button  {
+   width: 21%;
+ }
+}
+
+@media screen and (max-width: 1000px) {
+ .footer__button {
+   width: 27%;
+ }
+}
+
+@media screen and (max-width: 700px) {
+
+ .footer__button {
+   width: 30%;
+ }
+}
+
+@media screen and (max-width: 720px) {
+ .footer__author-container {
+  display: none;
+ }
+}
+
+
+@media screen and (max-width: 600px) {
+
+ .footer {
+  padding: 0 1.8vw;
+ }
+
+ .footer__button {
+  width: 35%;
+ }
+
+}
+
+@media screen and (max-width: 450px) {
+
+ .footer {
+  padding: 0 1.3vw;
+ }
+
+ .footer__button {
+  width: 50%;
+ }
+}
+
+@media screen and (max-width: 300px) {
+ .footer__button {
+  width: 55%;
+}
+
+
+}

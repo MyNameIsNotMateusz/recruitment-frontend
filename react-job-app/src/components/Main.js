@@ -15,13 +15,13 @@ const Main = () => {
 
  return (
   <>
-   {/* <Components.Header toggle={toggle} /> */}
+   <Components.Header toggle={toggle} />
 
    <div className="main">
 
    <Components.AppFunctionality />
 
-    {/* <div className="main__options-container">
+    <div className="main__options-container">
      <div className="main__options">
       <div className="main__options-item" onClick={removeText}>
        <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ const Main = () => {
        <p>POKAŻ DANE OSOBOWE</p>
       </div>
      </div>
-    </div> */}
+    </div>
 
    </div>
   </>
