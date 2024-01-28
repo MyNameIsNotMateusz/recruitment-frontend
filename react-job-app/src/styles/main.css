@@ -7,6 +7,25 @@
  grid-template-rows: 1fr 6fr 1fr;
 }
 
+.main__header {
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main__header h1 {
+  color: white;
+}
+
+.main__header button {
+  width: 15%;
+  height: 0.5px;
+  border: none;
+}
+
 .main__options-container {
  width: 100%;
  grid-row: 3 / span 1;

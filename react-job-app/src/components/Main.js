@@ -19,6 +19,11 @@ const Main = () => {
 
    <div className="main">
 
+    <div className="main__header">
+     <h1>Nagłówek H1</h1>
+     <button />
+    </div>
+
    <Components.AppFunctionality />
 
     <div className="main__options-container">
