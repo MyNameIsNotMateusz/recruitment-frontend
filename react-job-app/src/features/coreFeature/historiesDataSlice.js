@@ -6,7 +6,7 @@ export const historiesDataSlice = createSlice({
  name: "historiesData",
  initialState: {
   allHistories: HistoriesData,
-  visibleHistories: "",
+  visibleHistories: JSON.parse(window.localStorage.getItem("MY_HISTORY")),
   selectedId: [],
  },
  reducers: {
@@ -91,11 +91,14 @@ export const historiesDataSlice = createSlice({
      ]
     }
    }
+  },
+  clearHistory: (state) => {
+   state.visibleHistories = "";
   }
  }
 })
 
-export const { replaceHistory, addHistory } = historiesDataSlice.actions;
+export const { replaceHistory, addHistory, getDataFromLocalStorage, clearHistory } = historiesDataSlice.actions;
 
 export const visibleHistory = state => state.historiesData.visibleHistories;
 

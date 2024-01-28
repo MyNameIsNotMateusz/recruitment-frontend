@@ -1,7 +1,7 @@
 import "../styles/appfunctionality.css";
 import { replaceHistory, visibleHistory, addHistory } from "../features/coreFeature/historiesDataSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const AppFunctionality = () => {
 
@@ -10,6 +10,10 @@ const AppFunctionality = () => {
   const [option, setOption] = useState(null);
 
   const history = useSelector(visibleHistory);
+
+  useEffect(() => {
+    window.localStorage.setItem("MY_HISTORY", JSON.stringify(history));
+  }, [history]) 
 
 
   return (
