@@ -4,7 +4,7 @@ import Resources from "../data/resources";
 const Warning = () => {
  
  return (
-    <div class="warning-container active">
+    <div class="warning-container">
      <div class="warning-container__content">
       <img src={Resources.warning} class="warning-container__icon" />
 

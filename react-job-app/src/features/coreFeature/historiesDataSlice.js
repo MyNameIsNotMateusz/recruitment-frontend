@@ -76,7 +76,7 @@ export const historiesDataSlice = createSlice({
     } else {
      let selectedHistory = state.allHistories[option - 1].sentence;
      if (state.visibleHistories) {
-      state.visibleHistories = state.visibleHistories + " " + selectedHistory;
+      state.visibleHistories = state.visibleHistories + " then " + selectedHistory;
       state.selectedId = [
        ...state.selectedId,
        option
@@ -95,7 +95,7 @@ export const historiesDataSlice = createSlice({
      return;
     }
     if (state.visibleHistories) {
-     state.visibleHistories = state.visibleHistories + " " + state.allHistories[random - 1].sentence;
+     state.visibleHistories = state.visibleHistories + " then " + state.allHistories[random - 1].sentence;
      state.selectedId = [
       ...state.selectedId,
       random
