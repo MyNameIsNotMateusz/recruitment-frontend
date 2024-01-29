@@ -1,4 +1,4 @@
-import "../styles/main.css";
+import "../styles/main.scss";
 import { useState } from "react";
 import Components from "../data/components";
 import { clearHistory } from "../features/coreFeature/historiesDataSlice";
@@ -9,6 +9,8 @@ const Main = () => {
  // I'm creating a boolean useState to pass true or false as props to the Header component. When true, it displays the first and last name; when false, it hides them.
  const [toggle, setToggle] = useState(false);
 
+
+ //I saved useDispatch to the dispatch variable to be able to perform actions.
  const dispatch = useDispatch();
 
  return (

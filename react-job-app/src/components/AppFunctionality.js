@@ -1,4 +1,4 @@
-import "../styles/appfunctionality.css";
+import "../styles/appfunctionality.scss";
 import { replaceHistory, visibleHistory, addHistory } from "../features/coreFeature/historiesDataSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
@@ -6,10 +6,13 @@ import Components from "../data/components";
 
 const AppFunctionality = () => {
 
+  //I saved useDispatch to the dispatch variable to be able to perform actions.
   const dispatch = useDispatch();
 
+  //this useState stores the currently selected options.
   const [option, setOption] = useState(null);
 
+  //When the history changes, it triggers a use effect that adds it to local storage.
   const history = useSelector(visibleHistory);
 
   useEffect(() => {

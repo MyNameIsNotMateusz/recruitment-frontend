@@ -1,4 +1,4 @@
-import "../styles/header.css";
+import "../styles/header.scss";
 import Resources from "../data/resources";
 import { useEffect } from "react";
 

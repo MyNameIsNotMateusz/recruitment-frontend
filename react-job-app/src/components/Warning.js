@@ -1,4 +1,4 @@
-import "../styles/warning.css";
+import "../styles/warning.scss";
 import Resources from "../data/resources";
 
 const Warning = () => {

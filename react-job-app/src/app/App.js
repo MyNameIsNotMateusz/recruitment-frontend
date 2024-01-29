@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../styles/app.css";
+import "../styles/app.scss";
 import Components from "../data/components";
 
 const App = () => {
+
+  //I add a countdown for two seconds to make sure that the data from the json file is downloaded.
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
