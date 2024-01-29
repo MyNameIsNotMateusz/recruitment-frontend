@@ -1,10 +1,19 @@
 import "../styles/main.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Components from "../data/components";
 import { clearHistory } from "../features/coreFeature/historiesDataSlice";
 import { useDispatch } from "react-redux";
 
 const Main = () => {
+
+ //I added a loading effect to download everything from the json file.
+ const [loading, setLoading] = useState(true);
+
+ useEffect(() => {
+  setTimeout(() => {
+   setLoading(false);
+  }, 1000)
+ }, [])
 
  // I'm creating a boolean useState to pass true or false as props to the Header component. When true, it displays the first and last name; when false, it hides them.
  const [toggle, setToggle] = useState(false);
@@ -24,7 +33,7 @@ const Main = () => {
      <button />
     </div>
 
-   <Components.AppFunctionality />
+   {loading ? <Components.LoadingSketelon /> : <Components.AppFunctionality />}
 
     <div className="main__options-container">
      <div className="main__options">
