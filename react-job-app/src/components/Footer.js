@@ -1,5 +1,4 @@
 import "../styles/footer.css";
-import Resources from "../data/resources";
 
 const Footer = () => {
 

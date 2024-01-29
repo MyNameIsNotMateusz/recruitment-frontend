@@ -2,6 +2,23 @@ import { createSlice } from "@reduxjs/toolkit";
 import HistoriesData from "./data.json";
 import { getRandomIntWithExceptions } from "./getRandomNumber";
 
+let isTestRunning = false;
+
+const showWarning = () => {
+  if (isTestRunning) return;
+  isTestRunning = true;
+
+  const warning = document.querySelector(".warning-container");
+
+  warning.classList.add("active");
+
+  setTimeout(() => {
+    warning.classList.remove("active");
+    isTestRunning = false;
+  }, 1500);
+
+}
+
 export const historiesDataSlice = createSlice({
  name: "historiesData",
  initialState: {
@@ -22,7 +39,7 @@ export const historiesDataSlice = createSlice({
 
    // I check if any option is selected.
    if (!option) {
-    alert("choose one option from three");
+    showWarning();
     return;
    }
 
@@ -48,7 +65,7 @@ export const historiesDataSlice = createSlice({
 
    // I check if any option is selected.
    if (!option) {
-    alert("choose one option from three");
+    showWarning();
     return;
    }
 
