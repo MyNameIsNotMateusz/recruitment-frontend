@@ -1,6 +1,7 @@
 import "../styles/header.scss";
-import Resources from "../data/resources";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 
 const Header = (props) => {
 
@@ -19,7 +20,7 @@ const Header = (props) => {
     <div className="header">
       <a href="/">
         <div className="header__logo">
-          <img src={Resources.htmlImage} alt="HTML5 Icon" />
+          <FontAwesomeIcon className="header__logo-htmlIcon" icon={faHtml5} style={{color: "#ffffff",}} />
         </div>
       </a>
       <div className="header__caption">

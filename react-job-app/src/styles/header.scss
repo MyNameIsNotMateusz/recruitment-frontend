@@ -36,8 +36,9 @@ $background-color_3: #e88404;
 	&:hover {
 		background-color: $background-color_3;
 	}
-	img {
-		width: 65%;
+	.header__logo-htmlIcon {
+		width: 70%;
+		height: 70%;
 	}
 }
 .header__caption {

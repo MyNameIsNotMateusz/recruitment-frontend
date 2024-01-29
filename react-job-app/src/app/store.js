@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import historiesDataReducer from "../features/coreFeature/historiesDataSlice";
+import sentencesReducer from "../features/coreFeature/sentencesSlice";
 
 export default configureStore({
  reducer: {
-  historiesData: historiesDataReducer
+  sentences: sentencesReducer,
  }
 })

@@ -1,4 +1,4 @@
-import "../styles/loadingsketelon.css";
+import "../styles/loadingsketelon.scss";
 
 const LoadingSketelon = () => {
 

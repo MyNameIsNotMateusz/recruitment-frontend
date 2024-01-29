@@ -24,7 +24,7 @@ const Footer = () => {
       options.style.opacity = "0";
     } else {
       if (screenWidth <= 800 && screenWidth > 450) {
-        options.style.height = "50%";
+        options.style.height = "60%";
         options.style.opacity = "1";
       } else if (screenWidth <= 450 && screenWidth > 300) {
         options.style.height = "45%";
@@ -33,7 +33,7 @@ const Footer = () => {
         options.style.height = "40%";
         options.style.opacity = "1";
       } else {
-        options.style.height = "65%";
+        options.style.height = "75%";
         options.style.opacity = "1";
       }
     }

@@ -1,42 +1,42 @@
 [
- {
-   "id": 1,
-   "sentence": "I fell out of bed"
- },
- {
-   "id": 2,
-   "sentence": "I rode my bike through puddles"
- },
- {
-   "id": 3,
-   "sentence": "I got lost in the city center"
- },
- {
-   "id": 4,
-   "sentence": "I bought a new toy"
- },
- {
-   "id": 5,
-   "sentence": "I talked to a parrot"
- },
- {
-   "id": 6,
-   "sentence": "I slipped on the slippery floor"
- },
- {
-   "id": 7,
-   "sentence": "I found a treasure while walking"
- },
- {
-   "id": 8,
-   "sentence": "I forgot about an important meeting"
- },
- {
-   "id": 9,
-   "sentence": "I baked a delicious cake"
- },
- {
-   "id": 10,
-   "sentence": "I watched a funny cat on the Internet"
- }
+  {
+    "id": 1,
+    "sentence": "Słońce świeci jutro."
+  },
+  {
+    "id": 2,
+    "sentence": "Kot biega po podwórku."
+  },
+  {
+    "id": 3,
+    "sentence": "Deszcz pada gęsto za oknem."
+  },
+  {
+    "id": 4,
+    "sentence": "Wiatr szeleści liśćmi drzew."
+  },
+  {
+    "id": 5,
+    "sentence": "Ptaki śpiewają o poranku."
+  },
+  {
+    "id": 6,
+    "sentence": "Książka leży na stole."
+  },
+  {
+    "id": 7,
+    "sentence": "Kwiaty rozkwitają w maju."
+  },
+  {
+    "id": 8,
+    "sentence": "Dzieci bawią się na placu zabaw."
+  },
+  {
+    "id": 9,
+    "sentence": "Chmury przemykają po niebie."
+  },
+  {
+    "id": 10,
+    "sentence": "Trawa jest zielona i soczysta."
+  }
 ]
