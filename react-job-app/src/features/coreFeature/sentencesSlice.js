@@ -148,6 +148,8 @@ export const { replaceSentence, addSentence, clearSentences } = sentencesSlice.a
 
 export const selectedSentences = state => state.sentences.displayedSentences;
 
+export const isLoaded = state => state.sentences.allSentences;
+
 export const selectedId = state => state.sentences.selectedId;
 
 export default sentencesSlice.reducer;

@@ -1,7 +1,7 @@
 import "../styles/main.scss";
 import { useEffect, useState } from "react";
 import Components from "../data/components";
-import { clearSentences, loadData, selectedSentences } from "../features/coreFeature/sentencesSlice";
+import { loadData, selectedSentences, isLoaded } from "../features/coreFeature/sentencesSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const Main = () => {
@@ -13,13 +13,13 @@ const Main = () => {
   const [loading, setLoading] = useState(true);
 
   //I create a variable to store my state.
-  const sentences = useSelector(selectedSentences);
+  const sentences = useSelector(isLoaded);
 
  //It calls the function asynchronously and adds data from the json file to my state.
  useEffect(() => {
   dispatch(loadData());
 
-  //Once the data is loaded, I turn on the application.
+  // Once the data is loaded, I turn on the application.
   if (sentences) {
    setTimeout(() => {
     setLoading(false);
