@@ -40,4 +40,4 @@ Ten projekt Reactowy był wykonany w ramach zadania rekrutacyjnego. Poniżej zna
 
 ## Autor
 
-Autor: [Mateusz Otorowski]
+Autor: Mateusz Otorowski
