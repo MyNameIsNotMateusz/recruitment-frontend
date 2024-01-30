@@ -1,28 +1,35 @@
 import "../styles/main.scss";
 import { useEffect, useState } from "react";
 import Components from "../data/components";
-import { clearSentences } from "../features/coreFeature/sentencesSlice";
-import { useDispatch } from "react-redux";
+import { clearSentences, loadData, selectedSentences } from "../features/coreFeature/sentencesSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Main = () => {
 
  //I saved useDispatch to the dispatch variable to be able to perform actions.
  const dispatch = useDispatch();
 
- //I added a loading effect to download everything from the json file.
- const [loading, setLoading] = useState(true);
+  //I added a loading effect to download everything from the json file.
+  const [loading, setLoading] = useState(true);
 
+  //I create a variable to store my state.
+  const sentences = useSelector(selectedSentences);
+
+ //It calls the function asynchronously and adds data from the json file to my state.
  useEffect(() => {
+  dispatch(loadData());
 
-  setTimeout(() => {
-   setLoading(false);
-  }, 1000)
- }, [])
+  //Once the data is loaded, I turn on the application.
+  if (sentences) {
+   setTimeout(() => {
+    setLoading(false);
+   }, 1000)
+  }
+
+ }, [dispatch, sentences])
 
  // I'm creating a boolean useState to pass true or false as props to the Header component. When true, it displays the first and last name; when false, it hides them.
  const [toggle, setToggle] = useState(false);
-
-
 
  return (
   <>
@@ -53,7 +60,6 @@ const Main = () => {
       </div>
      </div>
     </div>
-
    </div>
   </>
  )

@@ -1,5 +1,5 @@
 import "../styles/appfunctionality.scss";
-import { replaceSentence, addSentence, selectedSentences } from "../features/coreFeature/sentencesSlice";
+import { replaceSentence, addSentence, selectedSentences, selectedId } from "../features/coreFeature/sentencesSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import Components from "../data/components";
@@ -14,9 +14,11 @@ const AppFunctionality = () => {
 
   //When the history changes, it triggers a use effect that adds it to local storage.
   const sentences = useSelector(selectedSentences);
+  const ids = useSelector(selectedId);
 
   useEffect(() => {
     window.localStorage.setItem("MY_SENTENCES", JSON.stringify(sentences));
+    window.localStorage.setItem("MY_ID", JSON.stringify(ids));
   }, [sentences])
 
 
@@ -55,7 +57,7 @@ const AppFunctionality = () => {
       <div className="main__content-item main__content-item--wide">
         <h3>BLOK BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE</h3>
         <div className="main__content-item-text">
-          {sentences.map((item) => {
+          {sentences && sentences.map((item) => {
             return (
               <p>{item}</p>
             )
