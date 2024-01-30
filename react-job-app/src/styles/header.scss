@@ -3,7 +3,7 @@ $background-color_1: #100c14;
 $background-color_2: #383434;
 $background-color_3: #e88404;
 
-.header {
+header {
 	grid-row: 1 / span 1;
 	width: 100%;
 	display: flex;
@@ -93,7 +93,7 @@ $background-color_3: #e88404;
 		width: 7.8vh;
 		height: 7.8vh;
 	}
-	.header {
+	header {
 		padding: 1.5vh 1.8vw;
 	}
 }
@@ -110,7 +110,7 @@ $background-color_3: #e88404;
 		width: 6.9vh;
 		height: 6.9vh;
 	}
-	.header {
+	header {
 		padding: 1.5vh 1.3vw;
 	}
 }

@@ -17,7 +17,7 @@ const Header = (props) => {
 
 
   return (
-    <div className="header">
+    <header>
       <a href="/">
         <div className="header__logo">
           <FontAwesomeIcon className="header__logo-htmlIcon" icon={faHtml5} style={{color: "#ffffff",}} />
@@ -27,7 +27,7 @@ const Header = (props) => {
         <p className="header__caption-label">Zadanie <span>rekrutacyjne</span></p>
         <p className="header__caption-fullname">Mateusz Otorowski</p>
       </div>
-    </div>
+    </header>
   )
 };
 
