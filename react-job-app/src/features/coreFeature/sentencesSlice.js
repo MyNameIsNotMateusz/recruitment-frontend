@@ -29,12 +29,16 @@ export const loadData = createAsyncThunk(
   }
 )
 
+//Saves values from local storage
+const mySentences = JSON.parse(window.localStorage.getItem("MY_SENTENCES"));
+const myId = JSON.parse(window.localStorage.getItem("MY_ID"));
+
 export const sentencesSlice = createSlice({
   name: "sentences",
   initialState: {
     allSentences: null,
-    displayedSentences: JSON.parse(window.localStorage.getItem("MY_SENTENCES")),
-    selectedId: JSON.parse(window.localStorage.getItem("MY_ID")),
+    displayedSentences: mySentences !== null ? mySentences : [],
+    selectedId: myId !== null ? myId : [],
     isLoading: false,
     isError: false,
   },
