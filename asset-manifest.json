@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-job-app/static/css/main.091be1a6.css",
-    "main.js": "/react-job-app/static/js/main.09474e82.js",
-    "static/js/787.35b0767c.chunk.js": "/react-job-app/static/js/787.35b0767c.chunk.js",
-    "index.html": "/react-job-app/index.html",
-    "main.091be1a6.css.map": "/react-job-app/static/css/main.091be1a6.css.map",
-    "main.09474e82.js.map": "/react-job-app/static/js/main.09474e82.js.map",
-    "787.35b0767c.chunk.js.map": "/react-job-app/static/js/787.35b0767c.chunk.js.map"
+    "main.css": "/recruitment-frontend/react-job-app/static/css/main.091be1a6.css",
+    "main.js": "/recruitment-frontend/react-job-app/static/js/main.966b59d7.js",
+    "static/js/787.35b0767c.chunk.js": "/recruitment-frontend/react-job-app/static/js/787.35b0767c.chunk.js",
+    "index.html": "/recruitment-frontend/react-job-app/index.html",
+    "main.091be1a6.css.map": "/recruitment-frontend/react-job-app/static/css/main.091be1a6.css.map",
+    "main.966b59d7.js.map": "/recruitment-frontend/react-job-app/static/js/main.966b59d7.js.map",
+    "787.35b0767c.chunk.js.map": "/recruitment-frontend/react-job-app/static/js/787.35b0767c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.091be1a6.css",
-    "static/js/main.09474e82.js"
+    "static/js/main.966b59d7.js"
   ]
 }
