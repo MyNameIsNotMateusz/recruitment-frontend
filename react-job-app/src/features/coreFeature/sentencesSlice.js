@@ -45,7 +45,7 @@ export const sentencesSlice = createSlice({
       let option = action.payload;
 
       // I check whether the option that is selected is the same as the current one so as not to do the same thing twice.
-      if (!state.selectedId) {
+      if (state.selectedId) {
         if (state.selectedId.length == 1 && option == state.selectedId[0] && option !== 3) {
           return;
         }
@@ -89,7 +89,7 @@ export const sentencesSlice = createSlice({
 
       //Adds history to the displayedSentences array.
       if (option == 1 || option == 2) {
-        if (state.selectedId.includes(option)) {
+        if (state.selectedId && state.selectedId.includes(option)) {
           return;
         } else {
           let selectedSentence = state.allSentences[option - 1].sentence;
