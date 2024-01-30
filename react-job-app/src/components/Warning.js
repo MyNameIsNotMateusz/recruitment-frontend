@@ -9,7 +9,7 @@ const Warning = () => {
          <div class="warning-container__content">
             <FontAwesomeIcon className="warning-container__icon" icon={faCircleExclamation} style={{ color: "#e88404", }} />
             <div class="warning-container__message">
-               <span class="warning-container__text warning-container__text--1">Warning</span>
+               <span class="warning-container__text warning-container__text--1">Ostrzeżenie!</span>
                <span class="warning-container__text warning-container__text--2">Wybierz jedną z trzech dostępnych opcji.</span>
             </div>
          </div>
